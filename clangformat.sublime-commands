@@ -1,0 +1,6 @@
+[
+	{
+		"caption": "Clang Format: Format File",
+		"command": "clang_format"
+	}
+]

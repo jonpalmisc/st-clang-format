@@ -27,7 +27,7 @@ class ClangFormatCommand(sublime_plugin.TextCommand):
 
         self.view.replace(edit, global_region, result.decode("utf-8"))
 
-    def input(self, args):
+    def input(self, _):
         return StyleInputHandler()
 
 
@@ -35,4 +35,4 @@ class StyleInputHandler(sublime_plugin.ListInputHandler):
     """Input handler to choose format presets."""
 
     def list_items(self):
-        return ["Local", "LLVM", "WebKit"]
+        return ["Default", "LLVM", "WebKit"]
